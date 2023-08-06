@@ -11,12 +11,12 @@ const getData = (query) => {
 };
 
 document.getElementById("button-addon2").addEventListener("click", () => {
-  const inputValue = document.getElementById("InputField").value;
+  const inputValue = document.getElementById("InputField1").value;
   getData(inputValue);
 });
 
 document.getElementById("button-addon3").addEventListener("click", () => {
-  const inputValue = document.getElementById("InputField").value;
+  const inputValue = document.getElementById("InputField2").value;
   getData(inputValue);
   document.getElementById("permanentTxt").removeAttribute("class", "d-none");
   document.getElementById("welcomeTxt").setAttribute("class", "d-none");

@@ -11,12 +11,12 @@ const getData = (query) => {
 };
 
 document.getElementById("button-addon2").addEventListener("click", () => {
-  const inputValue = document.getElementById("InputField").value;
+  const inputValue = document.getElementById("InputField1").value;
   getData(inputValue);
 });
 
 document.getElementById("button-addon3").addEventListener("click", () => {
-  const inputValue = document.getElementById("InputField").value;
+  const inputValue = document.getElementById("InputField2").value;
   getData(inputValue);
   document.getElementById("permanentTxt").removeAttribute("class", "d-none");
   document.getElementById("welcomeTxt").setAttribute("class", "d-none");
@@ -49,7 +49,7 @@ document.getElementById("InputField").addEventListener("click", () => {
 });
 
 const loadDetails = (data, imgSerial) => {
-  console.log(imgSerial);
+  // console.log(imgSerial);
   const img = document.createElement("img");
   img.setAttribute("src", data);
 
